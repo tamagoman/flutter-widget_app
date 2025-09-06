@@ -34,12 +34,12 @@ final appMenuItems = <MenuItem>[
     link: '/cards',
     icon: Icons.credit_card
   ),
-  // MenuItem(
-  //   title: 'Progress Indicator',
-  //   subTitle: 'Generales y controlados',
-  //   link: '/progress',
-  //   icon: Icons.refresh_rounded
-  // ),
+  MenuItem(
+    title: 'Progress Indicator',
+    subTitle: 'Generales y controlados',
+    link: '/progress',
+    icon: Icons.refresh_rounded
+  ),
   // MenuItem(
   //   title: 'Snackbars y Dialogs',
   //   subTitle: 'Indicadores en pantalla',
