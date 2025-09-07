@@ -28,24 +28,27 @@ final appMenuItems = <MenuItem>[
     link: '/buttons',
     icon: Icons.smart_button_outlined
   ),
+
   MenuItem(
     title: 'Tarjetas',
     subTitle: 'Un contenedor estilizado',
     link: '/cards',
     icon: Icons.credit_card
   ),
+
   MenuItem(
-    title: 'Progress Indicator',
+    title: 'Progress Indicators',
     subTitle: 'Generales y controlados',
     link: '/progress',
     icon: Icons.refresh_rounded
   ),
-  // MenuItem(
-  //   title: 'Snackbars y Dialogs',
-  //   subTitle: 'Indicadores en pantalla',
-  //   link: '/snackbars',
-  //   icon: Icons.info_outline
-  // ),
+
+  MenuItem(
+    title: 'Snackbars y Dialogs',
+    subTitle: 'Indicadores en pantalla',
+    link: '/snackbars',
+    icon: Icons.info_outline
+  ),
   // MenuItem(
   //   title: 'Animated Container',
   //   subTitle: 'StatefulWidget animado',
