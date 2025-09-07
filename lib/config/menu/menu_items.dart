@@ -49,12 +49,13 @@ final appMenuItems = <MenuItem>[
     link: '/snackbars',
     icon: Icons.info_outline
   ),
-  // MenuItem(
-  //   title: 'Animated Container',
-  //   subTitle: 'StatefulWidget animado',
-  //   link: '/animated-container',
-  //   icon: Icons.check_box_outline_blank_rounded
-  // ),
+
+  MenuItem(
+    title: 'Animated Container',
+    subTitle: 'StatefulWidget animado',
+    link: '/animated',
+    icon: Icons.check_box_outline_blank_rounded
+  ),
   // MenuItem(
   //   title: 'UI Controls + Tiles',
   //   subTitle: 'Checkbox, Radio y Switch',

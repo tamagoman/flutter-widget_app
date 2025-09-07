@@ -8,7 +8,7 @@ class SnackbarScreen extends StatelessWidget {
   const SnackbarScreen({super.key});
 
   
-  void ShowCustomSnackbar(BuildContext context) {
+  void showCustomSnackbar(BuildContext context) {
     ScaffoldMessenger.of(context).clearSnackBars();
 
     final snackbar = SnackBar(
@@ -80,7 +80,7 @@ class SnackbarScreen extends StatelessWidget {
       floatingActionButton: FloatingActionButton.extended(
         label: const Text('Mostrar Snackbar'),
         icon: const Icon(Icons.remove_red_eye_outlined),
-        onPressed: () => ShowCustomSnackbar(context),
+        onPressed: () => showCustomSnackbar(context),
       ),
     );
   }
