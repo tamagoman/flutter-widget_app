@@ -56,12 +56,13 @@ final appMenuItems = <MenuItem>[
     link: '/animated',
     icon: Icons.check_box_outline_blank_rounded
   ),
-  // MenuItem(
-  //   title: 'UI Controls + Tiles',
-  //   subTitle: 'Checkbox, Radio y Switch',
-  //   link: '/ui-controls',
-  //   icon: Icons.check_circle_outline
-  // ),
+  
+  MenuItem(
+    title: 'UI Controls + Tiles',
+    subTitle: 'Checkbox, Radio y Switch',
+    link: '/ui-controls',
+    icon: Icons.check_circle_outline
+  ),
   // MenuItem(
   //   title: 'App Tutorial',
   //   subTitle: 'Un pequeño tutorial de la app',
