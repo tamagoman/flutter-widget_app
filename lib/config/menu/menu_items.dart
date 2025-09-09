@@ -63,12 +63,12 @@ final appMenuItems = <MenuItem>[
     link: '/ui-controls',
     icon: Icons.check_circle_outline
   ),
-  // MenuItem(
-  //   title: 'App Tutorial',
-  //   subTitle: 'Un pequeño tutorial de la app',
-  //   link: '/tutorial',
-  //   icon: Icons.school_outlined
-  // ),
+  MenuItem(
+    title: 'Introducción a la aplicación',
+    subTitle: 'Un pequeño tutorial de la app',
+    link: '/tutorial',
+    icon: Icons.school_outlined
+  ),
   // MenuItem(
   //   title: 'Infinite Scroll & Pull to Refresh',
   //   subTitle: 'Listas infinitas y pull to refresh',
