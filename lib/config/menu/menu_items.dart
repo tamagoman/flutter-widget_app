@@ -69,12 +69,12 @@ final appMenuItems = <MenuItem>[
     link: '/tutorial',
     icon: Icons.school_outlined
   ),
-  // MenuItem(
-  //   title: 'Infinite Scroll & Pull to Refresh',
-  //   subTitle: 'Listas infinitas y pull to refresh',
-  //   link: '/infinite-scroll',
-  //   icon: Icons.list_alt_rounded
-  // ),
+  MenuItem(
+    title: 'Infinite Scroll & Pull to Refresh',
+    subTitle: 'Listas infinitas y pull to refresh',
+    link: '/infinite',
+    icon: Icons.list_alt_rounded
+  ),
   // MenuItem(
   //   title: 'Change Theme',
   //   subTitle: 'Cambiar tema de la app',

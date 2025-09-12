@@ -68,8 +68,6 @@ class _ButtonsView extends StatelessWidget {
               icon: const Icon( Icons.text_fields ),
             ),
             
-            // TODO: Custom Button
-
             IconButton(
               onPressed: (){},
               icon: const Icon( Icons.volume_up_outlined ),
