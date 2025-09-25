@@ -16,12 +16,13 @@ class MenuItem {
 }
 
 final appMenuItems = <MenuItem>[
-  // MenuItem(
-  //   title: 'Counter Screen',
-  //   subTitle: 'Contador con StatefulWidget',
-  //   link: '/counter',
-  //   icon: Icons.add_circle_outline
-  // ),
+  MenuItem(
+    title: 'Riverpod Counter',
+    subTitle: 'Contador con Riverpod',
+    link: '/counter-riverpod',
+    icon: Icons.countertops_rounded
+  ),
+
   MenuItem(
     title: 'Botones',
     subTitle: 'Varios botones en Flutter',
