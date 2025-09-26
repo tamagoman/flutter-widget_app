@@ -9,7 +9,7 @@ class ThemeChangerScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final bool isDarkMode = ref.watch(isDarkModeProvider);
+    final bool isDarkMode = ref.watch( themeNotifierProvider ).isDarkMode; 
 
     return Scaffold(
       appBar: AppBar(
@@ -19,8 +19,10 @@ class ThemeChangerScreen extends ConsumerWidget {
             icon: Icon(isDarkMode ? Icons.dark_mode_outlined : Icons.light_mode_outlined),
             onPressed: () {
               //ref.read(isDarkModeProvider.notifier).state = !isDarkMode;
-              ref.read(isDarkModeProvider.notifier).update((state) => !isDarkMode);
-              // isDarkMode = !isDarkMode;
+              // ref.read(isDarkModeProvider.notifier).update((state) => !isDarkMode);
+              ref.read( themeNotifierProvider.notifier ).toggleDarkMode();
+              //ref.read(themeNotifierProvider.notifier
+              
             },
           ),
         ],
@@ -37,7 +39,8 @@ class _ThemeChangerView extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
 
     final List<Color> colors = ref.watch(colorListProvider);
-    final int selectedIndex = ref.watch(selectedIndexColorProvider);
+    final int selectedIndex = ref.watch( themeNotifierProvider ).selectedColor;
+    // final int selectedIndex = ref.watch(selectedIndexColorProvider;
 
     return ListView.builder(
       itemCount: colors.length,
@@ -53,8 +56,9 @@ class _ThemeChangerView extends ConsumerWidget {
           onChanged: (value) {
             //Update can be used in the previous value is needed
             //ref.read(selectedIndexColorProvider.notifier).update((state) => value?.toInt() ?? state);
-            ref.read(selectedIndexColorProvider.notifier).state = value?.toInt() ?? 0;
-            // ref.read(themeNotifierProvider.notifier).setColor(color);
+            // ref.read(selectedIndexColorProvider.notifier).state = value?.toInt() ?? 0;
+
+            ref.read( themeNotifierProvider.notifier ).chanegColorIndex(value?.toInt() ?? 0);
           },
         );
       }
